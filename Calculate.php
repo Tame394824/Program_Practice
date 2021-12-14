@@ -5,7 +5,7 @@
 //ページに入った後、四則演算を押してください。
 
 
-$Formula = $_GET["Formula"];
+$Formula = $_POST["Formula"];
 $InputCheck = "/^[0-9\+\-\*\/\(\)]+$/";
 if(preg_match($InputCheck, $Formula)){
     $Number=str_split($Formula);
