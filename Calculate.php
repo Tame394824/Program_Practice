@@ -1,7 +1,8 @@
 <?php
 
 //文字の四則演算を入力し、その結果を計算する
-//DEMOページ：http://34.127.11.233/Programe_Practice/Calculate.php
+//DEMOページ：http://34.127.11.233/Programe_Practice/
+//ページに入った後、四則演算を押してください。
 
 
 $Formula = $_GET["Formula"];
