@@ -1,4 +1,9 @@
 <?php
+
+//文字の四則演算を入力し、その結果を計算する
+//DEMOページ：http://34.127.11.233/Programe_Practice/Calculate.php
+
+
 $Formula = $_GET["Formula"];
 $InputCheck = "/^[0-9\+\-\*\/\(\)]+$/";
 if(preg_match($InputCheck, $Formula)){
