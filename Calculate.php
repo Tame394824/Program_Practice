@@ -8,7 +8,7 @@
 $Formula = $_POST["Formula"];
 $InputCheck = "/^[0-9\+\-\*\/\(\)]+$/";
 if(preg_match($InputCheck, $Formula)){
-    $Number=str_split($Formula);
+    $Number = str_split($Formula);
     $Temp = array();
     $TempCount = 0;
     $Operation = array("+", "-", "*", "/");
@@ -18,7 +18,7 @@ if(preg_match($InputCheck, $Formula)){
 	}else if(($Item == ")")){
 	    $TempCount--;
 	    $Temp[$TempCount] .= Calculation($Temp[$TempCount+1], $Operation);
-	    $Temp[$TempCount+1]="";
+	    $Temp[$TempCount+1] = "";
 	}else{
 	    $Temp[$TempCount] .= $Item;
 	}
@@ -38,7 +38,7 @@ function Calculation($Value, $Operation){
 	return $Value;
     }
     $Op = array_shift($Operation);
-    $Number=str_split($Value);
+    $Number = str_split($Value);
     $Temp = array();
     $TempCount = 0;
     foreach($Number as $Item){
